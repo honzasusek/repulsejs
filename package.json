@@ -1,0 +1,28 @@
+{
+  "name": "repulse",
+  "version": "0.0.1",
+  "description": "A tiny js physics engine that can't do much",
+  "main": "src/index.js",
+  "author": "Honza Sušek <jsusek@blueberryapps.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.9.0",
+    "eslint-config-es2015": "^1.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-serve": "^1.4.0",
+    "immutable": "^3.8.1",
+    "webpack": "^2.1.0-beta <3",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^2.0.0"
+  }
+}
