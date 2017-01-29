@@ -272,13 +272,10 @@ export class World {
           force = World.collideCircleVsCircle(bodyA.position, shapeA, bodyB.position, shapeB);
         if(shapeA.constructor === Circle && shapeB.constructor === AABB)
           force = World.collideCircleVsAABB(bodyA.position, shapeA, bodyB.position, shapeB);
-        if(shapeA.constructor === Circle && shapeB.constructor === AABB)
-          force = World.collideCircleVsAABB(bodyA.position, shapeA, bodyB.position, shapeB);
         if(shapeA.constructor === AABB && shapeB.constructor === Circle)
           force = World.collideCircleVsAABB(bodyB.position, shapeB, bodyA.position, shapeA).negate();
 
         if(force) {
-
           if(bodyA.position.distanceTo(bodyB.position) === 0)
             force = new Vector(CONTACT_THRESHOLD, 0);
 
